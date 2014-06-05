@@ -188,7 +188,7 @@ bool IntegralVideo::computeIntegVideo(const string& fName_, Point3f rt2ps, float
 	computeMaxColorDxDy(imPs1, derXbuf[0], derYbuf[0], 1);
 	
 	cap>>im;	
-	while(!(im.empty()) && _ivBps <= MAX_VIDEO_BUFFER && _ivBps < endFrame - stFrame - 1)
+	while(!(im.empty()) && _ivBps <= MAX_VIDEO_BUFFER && _ivBps < endFrame - stFrame)
 	{
 		//processing image with grey gradient
 		imPs2 = im;
